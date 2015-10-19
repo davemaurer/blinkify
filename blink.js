@@ -4,11 +4,10 @@ $(document).ready(function() {
       var selected = this;
 
       function blink() {
-        selected.fadeToggle(speed, callback);
+        selected.fadeToggle(speed);
       }
-      blink(speed, blink);
+      setInterval(blink,speed);
     };
-    return this;
   }(jQuery));
 
   $('#blink-1').blinkify(3000);
