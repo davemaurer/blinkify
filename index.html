@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blink() exercise</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="blink.js"></script>
+  </head>
+  <body>
+    <div class="myDiv">
+      <div id="blink-1">I'm a <code>blink</code> tag!</div>
+    </div>
+    <div class="otherDiv">
+      <div id="blink-2">I'm <em>also</em> a <code>blink</code> tag!</div>
+    </div>
+    <script>
+      $('.myDiv').blink(1000);
+      // $('.otherDiv').blink(500);
+    </script>
+  </body>
+</html>
